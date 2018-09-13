@@ -40,11 +40,11 @@ public class SolveMaze {
                     if (!maze.canMove()) {
                         maze.move();
                     } else {
-                        while (!maze.canMove()) {
+                        while (maze.canMove()) {
                             maze.turnLeft();
                         }
-                        break;
                     }
+                    break;
                 }
 
             if (maze.isFinished()) {
